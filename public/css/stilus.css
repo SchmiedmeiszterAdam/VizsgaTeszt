@@ -1,0 +1,64 @@
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  background-color: lightblue;
+}
+main{
+  width: 80%;
+  max-width: 1500px;
+  background-color: lightgray;
+  border-radius: 5px;
+  margin:20px auto;
+  padding:5px 8px;
+}
+.kerdes{
+  width: 95%;
+  padding:5px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.kerdes-tarolo{
+  width: 100%;
+  background-color: brown;
+  height: 30px;
+  padding:5px;
+  border-radius: 5px;
+  margin:5px;
+  color:white;
+}
+.valasz-tarolo{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.valasz{
+  min-width: 45%;
+  min-height: 30px;
+  margin-bottom: 5px;
+  display: grid;
+  place-items: center;
+  background-color: white;
+  border:1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+@media screen and (max-width:500px){
+  main{
+    width: 100%;
+  }
+  .valasz-tarolo{
+    flex-direction: column;
+  }
+  .valasz{
+    width: 100%;
+  }
+}
